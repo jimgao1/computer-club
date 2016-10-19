@@ -1,10 +1,10 @@
-
 import java.util.Scanner;
 
 public class bf3{
 
 	public static boolean prime(int n){
-		for (int i = 2; i < n; i++){
+	    if (n <= 1) return false;
+		for (int i = 2; i < Math.sqrt(n); i++){
 			if (n % i == 0) 
 				return false;
 		}
@@ -17,12 +17,12 @@ public class bf3{
 
 		int N = sc.nextInt();
 		while(true){
-			N++;
-
 			if (prime(N)){
 				System.out.println(N);
 				break;
 			}
+			
+			N++;
 		}
 	}
 }
