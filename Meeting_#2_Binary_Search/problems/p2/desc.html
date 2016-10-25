@@ -1,0 +1,29 @@
+<h2>Problem Statement</h2>
+Given an array of $N$ ($1 \le N \le 10^5$) <b>unique, sorted</b> integers, please write a program to answer $K$ ($1 \le K \le 5 \times 10^5$) queries.<br>
+In each query, you will be given two integers $a$ and $b$. Please write a program to calculate the number of integers that are within $[a, b]$. 
+
+<h2>Input Specifications</h2>
+On the first line are two integers: $N$ and $K$, representing the number of elements in the array and the number of queries. 
+On the following $N$ lines are $N$ sorted integers.
+On the following $K$ lines are two integers $a_i$ and $b_i$, indicating the $i$'th query. It is guaranteed that $a_i \le b_i$.
+
+<h2>Output Specification</h2>
+For each query, output the number of elements in the range of $[a_i, b_i]$. 
+
+<h2>Sample Input</h2>
+<pre>
+5 2
+1 2 4 5 6
+1 5
+4 8
+</pre>
+
+<h2>Sample Output</h2>
+<pre>
+4
+3
+</pre>
+
+<h2>Explaination of Sample Input / Output</h2>
+For the first query, there are 4 integers within the range of $[1, 5]$. They are $1$, $2$, $4$, and $5$.<br>
+For the second query, there are 3 integers within the range of $[4, 8]$. They are $4$, $5$, and $6$. 
